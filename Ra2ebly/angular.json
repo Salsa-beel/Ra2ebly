@@ -92,7 +92,8 @@
             ],
             "scripts": [
               "../Ra2ebly/node_modules/popper.js/dist/popper.min.js",
-              "../Ra2ebly/node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "../Ra2ebly/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "../Ra2ebly/node_modules/chart.js/dist/chart.umd.js"
             ]
           }
         }

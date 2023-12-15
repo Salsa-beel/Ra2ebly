@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { linechartComponent } from './lineChart/linechart.component';
 import { BarchartComponent } from './barchart/barchart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BarchartComponent } from './barchart/barchart.component';
   imports: [
     CommonModule,
     SharedModule,
+    NgChartsModule
 
 
   ],
