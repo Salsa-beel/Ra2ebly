@@ -2,17 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EditModeComponent } from './edit-mode.component';
 import { SharedModule } from '../shared/shared.module';
-import { SidebarComponent } from '../shared/components/sidebar/sidebar.component';
+import { ViewModule } from '../view-mode/view.module';
 
 @NgModule({
 
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ViewModule
 
   ],
   declarations: [
-    EditModeComponent,
+    EditModeComponent
   ],
   exports:[
     EditModeComponent
