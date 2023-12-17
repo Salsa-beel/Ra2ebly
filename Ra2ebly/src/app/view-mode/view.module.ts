@@ -3,24 +3,28 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { linechartComponent } from './lineChart/linechart.component';
 import { BarchartComponent } from './barchart/barchart.component';
-import { NgChartsModule } from 'ng2-charts';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     linechartComponent,
-    BarchartComponent
+    BarchartComponent,
+    DashboardComponent,
+
+
+
   ],
   imports: [
     CommonModule,
     SharedModule,
-    NgChartsModule
 
 
   ],
   exports: [
     linechartComponent,
-    BarchartComponent
+    BarchartComponent,
+    DashboardComponent
   ]
 })
 export class ViewModule { }
