@@ -1,34 +1,48 @@
- <div class="container-fluid">
+<div class="container-fluid">
   <div class="row flex-nowrap">
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-              <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                  <span class="fs-3 d-none d-sm-inline">Ra2eb</span>
-              </a>
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 ">
+      <div
+        class="d-flex flex-column align-items-center align-items-sm-start px-4 pt-4 text-white min-vh-100"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <i class="fs-1 me-2 fa-brands fa-watchman-monitoring "></i>
+          <h5 class="fs-1 d-none d-sm-inline align-bottom">Ra2ebly</h5>
+        </a>
 
-              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                  <li class="nav-item"  routerLink="/dashboard">
+        <ul class="nav nav-pills flex-column ms-4 mt-2" id="menu">
+          <li class="nav-item align-items-center mt-3 p-3" >
+            <i class="fs-4 fa-solid fa-chart-column"></i>
+            <span class="ms-2 d-none d-sm-inline">Dashboard</span>
+          </li>
 
-                          <i class="fs-3 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+          <li class="nav-item mt-3 p-3">
+            <i class="fs-4 fa-regular fa-message"></i>
+            <span class="ms-3 d-none d-sm-inline">Messages</span>
+          </li>
 
+          <li class="nav-item mt-3 p-3">
+            <i class="fs-4 fa-regular fa-bell"></i>
+            <span class="ms-3 d-none d-sm-inline">Notification</span>
+          </li>
 
-                  </li>
+          <li class="nav-item mt-3 p-3" >
+            <i class="fs-4 fa-solid fa-child-reaching"></i>
+            <span class="ms-3 d-none d-sm-inline">Community</span>
+          </li>
 
-                  <li class="nav-item"  routerLink="/edit">
-
-                        <i class="fs-3 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Edit</span>
-
-
-                </li>
-
-
-              </ul>
-              <hr>
-
-          </div>
+          <li class="nav-item mt-3 p-3">
+            <i class="fs-4 fa-solid fa-gear"></i
+            ><span class="ms-3 d-none d-sm-inline">Settings</span>
+          </li>
+        </ul>
+        <hr />
       </div>
-      <div class="col py-3">
-        <router-outlet></router-outlet>
-      </div>
+    </div>
+    <div class="col p-2">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

@@ -1,0 +1,72 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12 text-end p-5">
+
+      <a class="text-end " (click)="edit()">
+
+        <i class=" fs-4 fa-solid fa-pen p-1 text-end" style="color: #9ef4a1;"> </i>
+
+      </a>
+
+
+    </div>
+
+
+      <div class="container-fluid">
+        <div class="row  text-end ">
+
+          <div class="col-md-4 p-3 text-white ">
+            <label
+              class="form-check-label "
+              for="flexCheckDefault"
+              *ngIf="!isHidden"
+            >
+           <h6> Hide Line Chart</h6>
+            </label>
+
+            <input
+              class="form-check-input ms-2 "
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+              *ngIf="!isHidden"
+              (click)="lineVisibility()"
+            />
+          </div>
+
+          <div class="col-md-3  text-white p-3">
+            <label
+            class="form-check-label "
+            for="flexCheckDefault"
+            *ngIf="!isHidden"
+          >
+            Hide Bar Chart
+          </label>
+
+          <input
+            class="form-check-input ms-2 "
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+            *ngIf="!isHidden"
+            (click)="barVisibility()"
+          />
+        </div>
+
+          </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-10 col-sm-12 col-lg-6 "> <app-linechart *ngIf="!notVisible" class="m-1"></app-linechart></div>
+
+      <div class="col-md-10 col-sm-12 col-lg-6 "> <app-barchart *ngIf="!notDisplay"  class="m-1"></app-barchart></div>
+
+
+    </div>
+  </div>
+
+
+
