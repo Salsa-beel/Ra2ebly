@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditModeComponent } from './edit-mode/edit-mode.component';
-import { BarchartComponent } from './view-mode/barchart/barchart.component';
+import { DashboardComponent } from './view-mode/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path:'dashboard',component:BarchartComponent},
+  {path:'dashboard',component:DashboardComponent},
   {path:'edit',component:EditModeComponent},
   {path:'',redirectTo:'/dashboard', pathMatch:'full'},
+
 ];
 
 @NgModule({
