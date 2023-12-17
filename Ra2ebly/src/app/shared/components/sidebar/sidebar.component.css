@@ -1,7 +1,8 @@
-
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 *{
   font-family: 'Inter', sans-serif;
+  background-color: rgb(0, 0, 0);
 }
 
 h5{
@@ -13,4 +14,16 @@ h5{
 
 li{
   cursor: pointer;
+}
+
+ul li{
+  border: 1px solid transparent;
+}
+
+ul li:hover {
+  border: 1px solid #7ce978e3;
+  border-radius: 20px;
+  color: #7ce978e3;
+
+
 }
